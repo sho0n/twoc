@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  color: black;
+  text-decoration: none;
+  text-size-adjust: 20px;
+  padding: 5px;
+}
+
+a:hover {
+  color: brown;
+  text-decoration: none;
+  text-size-adjust: 20px;
+}
+.navBarContainer {
+  background-color: rgb(245, 168, 24);
+  padding: 10px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
