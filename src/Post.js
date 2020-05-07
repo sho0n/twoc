@@ -1,11 +1,11 @@
 import React from 'react';
 
-function App() {
+function Posts() {
   return (
-    <div className="App">
-<p>This is post</p>
+    <div className='page'>
+
     </div>
   );
 }
 
-export default App;
+export default Posts;

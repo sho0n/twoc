@@ -1,11 +1,11 @@
 import React from 'react';
 
-function App() {
+function Ads() {
   return (
-    <div className="App">
-<p>This is ads</p>
+    <div className='page'>
+
     </div>
   );
 }
 
-export default App;
+export default Ads;
