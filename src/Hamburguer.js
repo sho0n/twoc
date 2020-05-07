@@ -3,7 +3,7 @@ import Menu from './Images/menu.png';
 import Navbar from './Navbar';
 
 
-class Hamburguer extends React.Component {
+class Hamburguer extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -20,7 +20,7 @@ class Hamburguer extends React.Component {
         return (
             <>
             <div className='hamburguerBox'>
-                <img onClick={(e) => this.changeState(e)} src={Menu} className='menuIcon'></img>
+                <img onClick={(e) => this.changeState(e)} src={Menu} className='menuIcon' alt='menu icon'></img>
             </div>
             <div className={className}>
                 <Navbar></Navbar>
