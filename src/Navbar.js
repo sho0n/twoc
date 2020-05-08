@@ -14,10 +14,12 @@ class Navbar extends Component {
 					        <div className='link'><Link to="/post">Post</Link></div>
 					        <div className='link'><Link to="/ads">Ads</Link></div>
 				        </div>
-			        </Switch>
+						</Switch>
+					
 					<Route exact path="/home" component={Home} />
 		        	<Route path="/post" component={Post} />
 		        	<Route path="/ads" component={Ads} />
+					
 				</Router>
                </div>
         )

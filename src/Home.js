@@ -5,7 +5,7 @@ function Home(){
         <div className='page'>
             <div className='homeContainer'></div>
                 <ul>
-                    <li></li>
+                    <li>kjhkhkjhkjkhkjhjh</li>
                 </ul>
             
         </div>
