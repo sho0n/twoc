@@ -1,33 +1,30 @@
 import React, { Component } from 'react';
 import Menu from './Images/menu.png';
-import Navbar from './Navbar';
-
 
 class Hamburguer extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             clicked: true,
+            newState: 'show',
         };
     }
     changeState() {
         this.setState(prevState => (
-            { clicked: !prevState.clicked}
-        ));
+            { clicked: !prevState.clicked,
+                newState: this.state.clicked ? 'show' : 'hide',
+             }
+        ));      
     }
-    render() {
-        const className = this.state.clicked ? 'show' : 'hide';
+
+    render() {   
         return (
             <>
-            <div className='hamburguerBox'>
-                <img onClick={(e) => this.changeState(e)} src={Menu} className='menuIcon' alt='menu icon'></img>
-            </div>
-            <div className={className}>
-                <Navbar></Navbar>
-            </div>
+                <div onClick={ (e) => this.changeState(e)} className='hamburguerBox'>
+                    <img onClick={() => this.props.action(`${this.state.newState}`)} src={Menu} className='menuIcon' alt='menu icon' ></img>  
+                </div>   
             </>
         )
     }
-
 }
 export default Hamburguer;
