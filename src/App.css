@@ -3,39 +3,45 @@
 }
 
 .navBarContainer {
-  background-color: rgb(245, 168, 24);
+  background-color: white;
   padding: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
   height: auto;
   text-align: center;
+  border-bottom: 2px solid #00A05F;
 }
 .hamburguerBox {
-  background-color: rgb(245, 168, 24);
-  
+  background-color: #3F9A51; 
 }
 
 .menuIcon {
   height: 20px;
   padding: 10px;
 }
+.link {
+  padding: 5px;
+  width: 98%;
+}
 
 a {
-  color: black;
+  color: #B7A99A;
   text-decoration: none;
-  text-size-adjust: 30px;
+  font-size: 23px;
   font-weight: bolder;
 }
 
 a:hover {
-  color: brown;
+  color: #FAA914;
   text-decoration: none;
-  text-size-adjust: 20px;
 }
 .show{
 }
 
 .hide{
   display: none;
+}
+.navBarContainer {
+	padding: 50px;
 }
 .page {
   background-color: rgb(245, 240, 241);
@@ -50,6 +56,10 @@ a:hover {
     display: inline;
     padding: 10px;
   }
+  a{
+    font-size: 20px;
+
+  }
   .menuIcon{
     display: none;
   }
@@ -57,3 +67,67 @@ a:hover {
     display: inline;
   }
 }
+
+/* HOME */
+ .promo {
+   background-color: #00A05F;
+   color: white;
+   padding: 10px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 16px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+ }
+ .page{
+  background-image: url(./Images/6453.jpg);
+  background-size: cover;
+ }
+ .info {
+	 width: 80%;
+	 display: grid;
+	 margin: 0 auto;
+	margin-top: 80px;
+	background-color: rgb(255, 254, 253);
+ }
+ .infoTitle {
+	 margin-top: 0px;
+	background-color: #FAA914;
+	color: #504538;
+	padding: 10px;
+	font-size: larger;
+	text-align: center;
+ }
+
+ .infoContent {
+	background-color: rgb(255, 254, 253);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+
+ }
+ .infoGrid{
+  display: grid;
+  grid-template-columns: 1fr;
+   grid-template-rows: auto auto auto;
+   z-index: 99;
+   padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 700px) {
+	 .infoGrid{
+     display: grid;
+		 grid-template-columns: 1fr 1fr;
+  		grid-template-rows: auto auto auto;
+	 }
+}
+
+@media only screen and (min-width: 1000px) {
+		.infoGrid{
+      display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			 grid-template-rows: auto auto auto;
+		}
+}	
+
+

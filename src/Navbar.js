@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Home from './Home';
 import Post from './Post';
 import Ads from './Ads';
+
 class Navbar extends Component {
     render(){
         return(

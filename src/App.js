@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Hamburguer from './Hamburguer';
 import Navbar from './Navbar';
+import Home from './Home';
 
 class App extends React.Component {
 	constructor(props) {
@@ -24,6 +25,7 @@ class App extends React.Component {
 				<div className={this.state.data} >
                     <Navbar ></Navbar>
                 </div>
+				
 			</>
 		);
 	}
