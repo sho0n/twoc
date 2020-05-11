@@ -18,9 +18,7 @@ class Navbar extends Component {
 				        </div>
 						</Switch>
 						</div>
-					<Route exact path="/home" component={Home} />
-		        	<Route path="/post" component={Post} />
-		        	<Route path="/ads" component={Ads} />
+					
 					
 				</Router>
                
