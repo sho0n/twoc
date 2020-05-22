@@ -4,7 +4,6 @@ import Hamburguer from './Hamburguer';
 import Navbar from './Navbar';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-
 import Post from './Post';
 import Ads from './Ads';
 

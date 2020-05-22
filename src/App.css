@@ -8,10 +8,10 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
   height: auto;
   text-align: center;
-  border-bottom: 2px solid #00A05F;
+  border-bottom: 2px solid rgb(160, 0, 40);
 }
 .hamburguerBox {
-  background-color: #3F9A51; 
+  background-color: rgb(160, 0, 40); 
 }
 
 .menuIcon {
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: #FAA914;
+  color: #EB2E3A;
   text-decoration: none;
 }
 .show{
@@ -70,7 +70,7 @@ a:hover {
 
 /* HOME */
  .promo {
-   background-color: #00A05F;
+   background-color: rgb(160, 0, 40);
    color: white;
    padding: 10px;
    text-align: center;
@@ -79,30 +79,33 @@ a:hover {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
  }
  .page{
-  background-image: url(./Images/6453.jpg);
+  background-image: url(./Images/recov.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
  }
+
  .info {
 	 width: 80%;
 	 display: grid;
 	 margin: 0 auto;
 	margin-top: 80px;
-	background-color: rgb(255, 254, 253);
+	background-color: #C3F9FF;
  }
  .infoTitle {
 	 margin-top: 0px;
-	background-color: #FAA914;
-	color: #504538;
+	background-color: rgb(2, 43, 58);
+	color: white;
 	padding: 10px;
 	font-size: larger;
 	text-align: center;
  }
 
  .infoContent {
-	background-color: rgb(255, 254, 253);
+	background-color: #C3F9FF;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0px 20px 0px 20px;
+	
 	text-align: justify;
 
  }
@@ -119,15 +122,21 @@ a:hover {
      display: grid;
 		 grid-template-columns: 1fr 1fr;
   		grid-template-rows: auto auto auto;
-	 }
+   }
+   .page{
+         background-size: cover;
+         background-repeat: no-repeat;
+   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
 		.infoGrid{
       display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			 grid-template-rows: auto auto auto;
-		}
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .page{
+      background-size: cover;
+    }
 }	
 
 
