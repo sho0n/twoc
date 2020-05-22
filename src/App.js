@@ -24,14 +24,17 @@ class App extends React.Component {
 	render(){
 		return (
 			<>
+			<Router>
 				<Hamburguer action={this.childHandler}/>
 				<div className={this.state.data} >
                     <Navbar ></Navbar>
                 </div>
-				<Router>
-					<Route exact path="/home" component={Home} />
+				
+				<Switch>
+					<Route exact path="/" component={Home} />
 		        	<Route path="/post" component={Post} />
 		        	<Route path="/ads" component={Ads} />
+				</Switch>
 				</Router>
 			</>
 		);

@@ -6,19 +6,19 @@ class Navbar extends Component {
     render(){
         return(
             
-			    <Router>
+			  
 					<div className="navBarContainer">
-			        <Switch>
+			        
 				        <div className="linkscontainer">
-					        <div className='link'><Link to="/home">Home</Link></div>
+					        <div className='link'><Link to="/">Home</Link></div>
 					        <div className='link'><Link to="/post">Post</Link></div>
 					        <div className='link'><Link to="/ads">Ads</Link></div>
 				        </div>
-						</Switch>
+					
 						</div>
 					
 					
-				</Router>
+			
                
         )
     }
